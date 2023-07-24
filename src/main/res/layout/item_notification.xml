@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@+id/notification"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:textSize="17sp" />
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@+id/notification_time"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingBottom="5dp"
+            android:textSize="15sp" />
+
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@+id/notification_date"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="5dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

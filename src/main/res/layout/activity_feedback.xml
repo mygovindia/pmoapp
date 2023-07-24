@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Q0 -->
+
+
+                <!-- Q1 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <com.sanskrit.pmo.Utils.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/rl1"
+                        android:text="@string/feedback_content"
+                        android:textColor="?iconColor"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp">
+
+                        <com.sanskrit.pmo.uiwidgets.NumberRatingBar
+                            android:id="@+id/rating_bar_1"
+                            style="@style/FeedbackNumberRatingBar" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_1"
+                            android:layout_alignLeft="@id/rating_bar_1"
+                            android:text="@string/not_good" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_1"
+                            android:layout_alignRight="@id/rating_bar_1"
+                            android:text="@string/very_good" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- Q2 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <com.sanskrit.pmo.Utils.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/rl2"
+                        android:text="@string/ease_of_use"
+                        android:textColor="?iconColor"
+                        android:textSize="16sp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp">
+
+                        <com.sanskrit.pmo.uiwidgets.NumberRatingBar
+                            android:id="@+id/rating_bar_2"
+                            style="@style/FeedbackNumberRatingBar" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_2"
+                            android:layout_alignLeft="@id/rating_bar_2"
+                            android:text="@string/not_good" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_2"
+                            android:layout_alignRight="@id/rating_bar_2"
+                            android:text="@string/very_good" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!-- Q3 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <com.sanskrit.pmo.Utils.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/rl3"
+                        android:text="@string/feedback_design"
+                        android:textColor="?iconColor"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp">
+
+                        <com.sanskrit.pmo.uiwidgets.NumberRatingBar
+                            android:id="@+id/rating_bar_3"
+                            style="@style/FeedbackNumberRatingBar" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_3"
+                            android:layout_alignLeft="@id/rating_bar_3"
+                            android:text="@string/not_good" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_3"
+                            android:layout_alignRight="@id/rating_bar_3"
+                            android:text="@string/very_good" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <com.sanskrit.pmo.Utils.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/rl4"
+                        android:text="@string/feedback_interactivity"
+                        android:textColor="?iconColor"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp">
+
+                        <com.sanskrit.pmo.uiwidgets.NumberRatingBar
+                            android:id="@+id/rating_bar_4"
+                            style="@style/FeedbackNumberRatingBar" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_4"
+                            android:layout_alignLeft="@id/rating_bar_4"
+                            android:text="@string/not_good" />
+
+                        <com.sanskrit.pmo.Utils.TypefaceTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_bar_4"
+                            android:layout_alignRight="@id/rating_bar_4"
+                            android:text="@string/very_good" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <com.sanskrit.pmo.Utils.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="25dp"
+                    android:text="@string/feedback_comments"
+                    android:textColor="?iconColor"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="-4dp"
+                    android:minLines="4"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:scrollbars="vertical"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="500">
+
+                    <EditText
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/let_us_know_more_optional"
+                        android:inputType="textCapSentences"
+                        android:nextFocusLeft="@id/feedback"
+                        android:nextFocusUp="@id/feedback" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- Submit button -->
+
+    <FrameLayout
+        android:id="@+id/submit_feedback_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#1976D2"
+
+        android:clickable="true"
+        android:focusable="true">
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@+id/submit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_submit_feedback"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </FrameLayout>
+</RelativeLayout>

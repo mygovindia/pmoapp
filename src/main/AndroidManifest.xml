@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"
+                      tools:node="remove" />
+<!--
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+-->
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+<!--
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+-->
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+    <application
+        android:name=".Application.CustomApplication"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:replace="android:icon,android:theme,android:allowBackup,label,name"
+        android:theme="@style/Theme.App.Starting">
+        <activity android:name=".Activities.PrivacyPolicyActivity"
+            android:theme="@style/AppThemeNormalLight"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            >
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.sanskrit.pmo.youtube.YouTubePlayerActivity.ApiKey"
+            android:value="AIzaSyDBVFPS8FXaurHOMUmUNaAyIoXemj7FfVI" />
+
+        <activity
+            android:name=".Activities.LanguageActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="true"
+            android:noHistory="true"
+            android:autoVerify="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme.FullScreen.Light"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:theme="@style/AppTheme.FullScreen.Dark"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+<!--        <activity-->
+<!--            android:name=".Activities.LanguageActivity"-->
+<!--            android:label="@string/app_name"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/AppTheme.FullScreen.Dark" />-->
+        <activity
+            android:name=".Activities.GalleryActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activities.AboutPMActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activities.FormerPMActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activities.TrackRecordActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"  />
+        <activity
+            android:name=".Activities.QuotesActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"  />
+        <activity
+            android:name=".Activities.GalleryImagesActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activities.GalleryPagerActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".player.youtube.YouTubePlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".Activities.TrackRecordDetailActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.MKBActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.NewsReaderActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.InfographicsActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.ViewImageActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalDark" />
+        <activity
+            android:name=".Activities.NewsDetailActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.FunctionalChartActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.FullScreen.Light" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+
+        <service android:name=".player.MusicService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="false"
+            />
+
+        <activity
+            android:name=".pushnotify.PushActionActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauthflowredirect"
+                    android:scheme="sanskritpmo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.VoiceOutActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.PollsActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.PollDetailActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.CustomWishActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.AppSetupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen.Dark" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.onegravity.contactpicker.core.ContactPickerActivity"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".twitter.tweetui.PlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MediaTheme" />
+        <activity
+            android:name=".twitter.tweetui.GalleryActivity"
+            android:theme="@style/MediaTheme" />
+        <activity
+            android:name=".twitter.core.identity.OAuthActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false" />
+        <activity
+            android:name=".webview.WebViewActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.FeedbackActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".Activities.VoiceoutShareActivity"
+            android:theme="@style/AppThemeNormalLight" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c8077ebaaaa3a70c39a1ac070dfcfdf2fb48b128" />
+
+        <activity
+            android:name="com.twitter.sdk.android.tweetui.PlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MediaTheme" />
+        <activity
+            android:name="com.twitter.sdk.android.tweetui.GalleryActivity"
+            android:theme="@style/MediaTheme" />
+        <activity
+            android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false" />
+        <activity
+            android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.NotificationsActivity"
+            android:theme="@style/AppThemeNormalLight" />
+        <activity
+            android:name=".twitter.core.identity.ShareEmailActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:icon="@drawable/tw__transparent"
+            android:label="@string/kit_name" />
+        <activity
+            android:name=".Activities.NativeLoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.NativeSignupActivity"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.SearchInfographicsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.SearchQuotesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.SearchFormerPMActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.SearchTrackRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.SearchGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.SearchMKBActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormalLight"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <service android:name=".Services.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+<!--        <service android:name=".Services.MyFirebaseInstanceIDService"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+    </application>
+
+</manifest>

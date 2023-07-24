@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:background="@color/dark_grey"
+    android:orientation="vertical">
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        android:id="@+id/tv_all_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="@string/available_languages"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:clipToPadding="false"
+            android:paddingTop="10dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/divider_height"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="false"
+        android:listSelector="#0006000d"
+        android:overScrollFooter="#0006000d"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/padding_normal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0006000d">
+
+        <com.sanskrit.pmo.Utils.ParallaxScrimageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:minHeight="100dp"
+            android:scaleType="centerCrop"
+            app:maxScrimAlpha="0.4"
+            app:parallaxFactor="-0.5"
+            app:scrimAlpha="0.0"
+            app:scrimColor="@color/scrim" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:background="#0006000d"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+    </FrameLayout>
+</FrameLayout>

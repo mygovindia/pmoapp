@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutEmpty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_vertical"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.sanskrit.pmo.Utils.ThemeTintedImageButton
+        android:id="@+id/t_emptyImageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+
+        android:src="@drawable/ic_error_outline_black_24dp" />
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        android:id="@+id/t_emptyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="No Data"
+        android:textColor="@color/black_grey" />
+
+    <Button
+        android:id="@+id/t_emptyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Your custom button"
+        android:visibility="gone" />
+</LinearLayout>

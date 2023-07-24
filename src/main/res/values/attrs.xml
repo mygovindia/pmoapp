@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="panelHeight" format="dimension" />
+        <attr name="slidePanelOffset" format="dimension" />
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="paralaxOffset" format="dimension" />
+        <attr name="directOffset" format="boolean" />
+        <attr name="fadeColor" format="color" />
+        <attr name="flingVelocity" format="integer" />
+        <attr name="dragView" format="reference" />
+        <attr name="dragViewClickable" format="boolean" />
+        <attr name="overlay" format="boolean" />
+        <attr name="anchorPoint" format="float" />
+        <attr name="initialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!-- FabButton -->
+    <declare-styleable name="CircleImageViewFabButton">
+        <attr name="android:src" />
+        <attr name="android:color" />
+        <attr name="android:indeterminate" />
+        <attr name="android:progress" />
+        <attr name="android:max" />
+        <attr name="android:indeterminateDuration" />
+        <attr name="fbb_progressColor" format="reference|color" />
+        <attr name="fbb_autoStart" format="boolean" />
+        <attr name="fbb_animSteps" format="integer" />
+        <attr name="fbb_progressWidthRatio" format="float" />
+        <attr name="fbb_endBitmap" format="reference" />
+        <attr name="fbb_showEndBitmap" format="boolean" />
+        <attr name="fbb_hideProgressOnComplete" format="boolean" />
+    </declare-styleable>
+
+    <!--daydream news clock-->
+    <declare-styleable name="TextClock">
+        <attr name="format12Hour" format="string" />
+        <attr name="format24Hour" format="string" />
+        <attr name="timeZone" format="string" />
+    </declare-styleable>
+
+    <bool name="isAbove11">false</bool>
+
+    <attr name="tagViewStyle" format="reference" />
+    <declare-styleable name="TagView">
+        <attr name="tagCornerRadius" format="dimension" />
+        <attr name="tagPadding" format="dimension" />
+        <attr name="tagUppercase" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="font" />
+        <attr name="android:textAppearance" />
+    </declare-styleable>
+
+    <declare-styleable name="InkPageIndicator">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotGap" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="pageIndicatorColor" format="color" />
+        <attr name="currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FontTextAppearance">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:fontFamily" />
+        <attr name="font" />
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundView">
+        <attr name="android:foreground" />
+
+        <attr name="android:foregroundGravity" />
+    </declare-styleable>
+
+    <declare-styleable name="Pinnable">
+        <attr name="state_pinned" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxScrimageView">
+        <attr name="scrimColor" format="color" />
+        <attr name="parallaxFactor" format="float" />
+        <attr name="scrimAlpha" format="float" />
+        <attr name="maxScrimAlpha" format="float" />
+    </declare-styleable>
+
+    <attr name="lineHeightHint" format="dimension" />
+
+    <declare-styleable name="BaselineGridTextView">
+        <attr name="lineHeightMultiplierHint" format="float" />
+        <attr name="lineHeightHint" />
+    </declare-styleable>
+
+    <declare-styleable name="TypefaceTextView">
+        <attr name="typeface" format="string" />
+    </declare-styleable>
+
+</resources>

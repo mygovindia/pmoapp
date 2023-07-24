@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alignmentMode="alignBounds"
+    android:columnCount="3"
+    android:rowCount="7"
+    android:useDefaultMargins="false">
+
+    <LinearLayout
+        android:id="@+id/actions"
+        android:layout_width="match_parent"
+        android:layout_columnSpan="3"
+        android:paddingTop="12dp">
+
+        <com.sanskrit.pmo.Utils.ThemeTintedButton
+            android:id="@+id/action_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_file_download_grey600_24dp"
+            android:text="@string/download" />
+
+        <com.sanskrit.pmo.Utils.ThemeTintedButton
+            android:id="@+id/action_two"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_comment_black_18dp"
+            android:text="@string/_0_comments" />
+
+        <com.sanskrit.pmo.Utils.ThemeTintedButton
+            android:id="@+id/action_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_share_black_24dp"
+            android:text="@string/share" />
+    </LinearLayout>
+</GridLayout>

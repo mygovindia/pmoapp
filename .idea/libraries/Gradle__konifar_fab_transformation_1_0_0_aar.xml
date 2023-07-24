@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: konifar:fab-transformation:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/582308e3be8902722194bd6d15162a22/transformed/jetified-fab-transformation-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/582308e3be8902722194bd6d15162a22/transformed/jetified-fab-transformation-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/konifar/fab-transformation/1.0.0/abc365f7c8344b8acc5ca062c48992b9833d0d40/fab-transformation-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/konifar/fab-transformation/1.0.0/d6f5e0184f4169459be548c4568e738899cb1731/fab-transformation-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

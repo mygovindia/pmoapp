@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:minHeight="150dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/color_twitter"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="15dp"
+
+        android:textColor="#0006000b" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="window_background_dark">#403f4d</color>
+    <color name="window_background_black">#000000</color>
+
+    <color name="colorPrimary">#3c328b</color>
+    <color name="colorPrimaryDark">#352774</color>
+    <color name="colorAccent">#c7a74c</color>
+
+    <color name="colorPrimaryDarkTheme">#4a4959</color>
+    <color name="colorPrimaryDarkDarkTheme">#525065</color>
+    <color name="colorAccentDarkTheme">#ffb701</color>
+
+    <color name="colorPrimaryReader">#fafafa</color>
+    <color name="colorPrimaryDarkReader">#cacaca</color>
+    <color name="colorAccentReader">#e91e63</color>
+
+    <color name="colorPrimaryBlack">#000000</color>
+    <color name="colorPrimaryDarkBlack">#000000</color>
+    <color name="colorAccentBlack">#ffffff</color>
+
+    <color name="black_translucent">#66000000</color>
+
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+
+    <color name="progressBackgroundColorLight">#33000000</color>
+    <color name="progressBackgroundColorDark">#33ffffff</color>
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <color name="color_twitter">#26a9e1</color>
+
+    <color name="pocket_color_1">#85edb9</color>
+    <color name="pocket_color_2">#34bdb7</color>
+    <color name="pocket_color_3">#ee4458</color>
+    <color name="pocket_color_4">#fcb74d</color>
+
+    <color name="pink_transparent">#22700d39</color>
+    <color name="green_transparent">#22375a1f</color>
+    <color name="blue_transparent">#22293576</color>
+    <color name="red_transparent">#227f3907</color>
+    <color name="purple_transparent">#22432677</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="pure_white">#ffffff</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <color name="scrim">#99323232</color>
+    <color name="dark_icon">#99000000</color>
+
+    <color name="background_light">#fafafa</color>
+    <color name="light_grey">#fff5f5f5</color>
+    <color name="dark_grey">#403f4d</color>
+    <color name="black_grey">#000000</color>
+    <color name="text_secondary_dark">#8a000000</color> <!-- 54% -->
+    <color name="text_tertiary_dark">#61000000</color> <!-- 38% -->
+    <color name="text_primary_dark">#de000000</color> <!-- 87% -->
+    <color name="selected_comment_background">#ffffffff</color>
+    <color name="inline_action_icon">#ff757575</color> <!-- grey 600 -->
+    <color name="mid_grey">#40808080</color>
+
+    <color name="ate_disabled_checkbox_light">#cecece</color>
+    <color name="ate_disabled_switch_track_light">#dadada</color>
+    <color name="ate_disabled_switch_thumb_light">#ababab</color>
+    <color name="ate_disabled_radiobutton_light">#cecece</color>
+    <color name="ate_disabled_edittext_light">#ededed</color>
+    <color name="ate_disabled_seekbar_light">#ededed</color>
+    <color name="ate_disabled_button_light">#cecece</color>
+
+    <color name="ate_disabled_checkbox_dark">#4a4a4a</color>
+    <color name="ate_disabled_switch_track_dark">#353535</color>
+    <color name="ate_disabled_switch_thumb_dark">#4c4c4c</color>
+    <color name="ate_disabled_radiobutton_dark">#4a4a4a</color>
+    <color name="ate_disabled_edittext_dark">#2e2e2e</color>
+    <color name="ate_disabled_seekbar_dark">#2e2e2e</color>
+    <color name="ate_disabled_button_dark">#4a4a4a</color>
+    <color name="link">#0a80d1</color>
+
+</resources>

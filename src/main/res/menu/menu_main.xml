@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="100"
+        android:title="@string/action_send_feedback"
+        android:visible="false"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:visible="false"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:title="@string/hint_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/ic_notifications_none_white_24dp"
+        android:orderInCategory="99"
+        android:title="@string/notifications"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_language_selection"
+        android:icon="@drawable/ic_g_translate"
+        android:orderInCategory="98"
+        android:title="@string/language"
+        android:visible="true"
+        app:showAsAction="always" />
+</menu>

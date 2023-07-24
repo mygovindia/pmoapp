@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="@string/drawer_item_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_collections_white_24dp"
+            android:title="@string/drawer_item_gallery" />
+        <item
+            android:id="@+id/nav_former_pm"
+            android:icon="@drawable/ic_account_box_white_24dp"
+            android:title="@string/drawer_item_formerpms" />
+        <item
+            android:id="@+id/nav_track_record"
+            android:icon="@drawable/ic_receipt_white_24dp"
+            android:title="@string/track_record_menu" />
+        <item
+            android:id="@+id/nav_about_pm"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="@string/drawer_item_aboutpm" />
+        <item
+            android:id="@+id/nav_mkb"
+            android:icon="@drawable/ic_audiotrack_black_24dp"
+            android:title="@string/drawer_item_mkb" />
+        <item
+            android:id="@+id/nav_infographics"
+            android:icon="@drawable/ic_photo_album_black_24dp"
+            android:title="@string/infographics" />
+        <item
+            android:id="@+id/nav_quotes"
+            android:icon="@drawable/ic_format_quote_white_24dp"
+            android:title="@string/drawer_item_quotes" />
+        <item
+            android:id="@+id/donate_pm"
+            android:icon="@drawable/ic_open_in_new_black_24dp"
+            android:title="@string/drawer_item_donatepm" />
+        <item
+            android:id="@+id/donate_ndf"
+            android:icon="@drawable/ic_open_in_new_black_24dp"
+            android:title="@string/donate_to_ndf" />
+        <item
+            android:id="@+id/interact_pm"
+            android:icon="@drawable/ic_open_in_new_black_24dp"
+            android:title="@string/drawer_item_interactpm" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/ic_privacy_policy_black_24dp"
+            android:title="@string/drawer_item_privacy_policy" />
+    </group>
+</menu>

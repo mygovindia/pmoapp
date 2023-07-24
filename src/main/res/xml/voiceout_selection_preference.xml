@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Twitter">
+        <CheckBoxPreference
+
+            android:key="preference_account_twitter"
+            android:summary="Not available. Click on Manage Voice button."
+            android:title="Twitter" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Facebook">
+        <CheckBoxPreference
+            android:key="preference_account_facebook"
+            android:summary="Not available. Click on Manage Voice button."
+            android:title="Facebook" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SMS">
+        <CheckBoxPreference
+            android:key="preference_account_sms"
+            android:summary="Not available. Click on Manage Voice button."
+            android:title="SMS Message" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Whatsapp">
+        <CheckBoxPreference
+            android:key="preference_account_whatsapp"
+            android:summary="Not available. Click on Manage Voice button."
+            android:title="Whatsapp" />
+    </PreferenceCategory>
+</PreferenceScreen>

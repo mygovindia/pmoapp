@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_comment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="@dimen/spacing_large"
+    android:paddingRight="@dimen/padding_normal">
+
+    <LinearLayout
+        android:id="@+id/linear_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                android:hint="@string/login_to_add_your_comments"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.sanskrit.pmo.Utils.ThemeTintedImageButton
+            android:id="@+id/post_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:padding="@dimen/spacing_normal"
+            android:src="@drawable/ic_insert_comment_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_not_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:background="@drawable/login_button"
+        android:orientation="vertical">
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingTop="6dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="6dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_tts"
+        android:icon="@drawable/ic_speaker_phone_white_24dp"
+        android:orderInCategory="91"
+        android:title="@string/listen_tts"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_fontsize"
+        android:icon="@drawable/ic_format_size_white_24dp"
+        android:orderInCategory="90"
+        android:title="@string/font_size"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <PreferenceCategory android:title="Twitter">-->
+<!--        <Preference-->
+<!--            android:key="preference_account_twitter"-->
+<!--            android:summary="Account not autorized. Login to Twitter to quickly tweet the feeds from PMO."-->
+<!--            android:title="Twitter" />-->
+<!--    </PreferenceCategory>-->
+    <PreferenceCategory android:title="Facebook">
+        <Preference
+            android:key="preference_account_facebook"
+            android:summary="Account not authorized. Login to Facebook to quickly share posts to your timeline."
+            android:title="Facebook" />
+    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="SMS">
+        <Preference
+
+            android:key="preference_account_sms"
+            android:summary="Click to configure SMS message settings."
+            android:title="SMS Message" />
+    </PreferenceCategory>-->
+</PreferenceScreen>

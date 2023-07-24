@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sanskrit.pmo.Utils.TouchImageView
+        android:id="@+id/pager_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true" />
+    <!--
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@+id/image_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="20dp"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="15sp" />-->
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/image_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        app:colorClickableText="@color/colorAccent"
+        app:trimCollapsedText="View More"
+        app:trimLines="3" />
+
+
+</FrameLayout>

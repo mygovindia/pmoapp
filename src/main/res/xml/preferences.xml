@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preference_screen">
+    <PreferenceCategory android:title="@string/general">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="toggle_push"
+            android:title="@string/push_notifications" />
+        <ListPreference
+            android:entries="@array/pref_language_entries"
+            android:entryValues="@array/pref_language_values"
+            android:key="language_preference"
+            android:summary="@string/language_summary"
+            android:title="@string/language" />
+        <ListPreference
+            android:defaultValue="light"
+            android:entries="@array/pref_theme_entries"
+            android:entryValues="@array/pref_theme_values"
+            android:key="theme_preference"
+            android:summary="@string/theme_summary"
+            android:title="@string/theme" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="daydream_category"
+        android:title="@string/daydream">
+        <Preference
+            android:key="preference_daydream"
+            android:summary="@string/daydream_summary"
+            android:title="@string/daydream" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/accounts">
+        <Preference
+            android:key="preference_account_mygov"
+            android:summary="@string/login_to_mygov"
+            android:title="@string/account_mygov" />
+<!--        <Preference-->
+<!--            android:key="preference_voiceout"-->
+<!--            android:summary="@string/manage_voiceout_title"-->
+<!--            android:title="@string/voice_out" />-->
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/other">
+        <Preference
+            android:key="preference_clear_cache_all"
+            android:summary="@string/clear_all_cache_summary"
+            android:title="@string/clear_all_cache" />
+    </PreferenceCategory>
+</PreferenceScreen>

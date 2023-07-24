@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: net.opacapp:multiline-collapsingtoolbar:27.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4ce4a601cc1d129dd4f44e66e45ca11f/transformed/jetified-multiline-collapsingtoolbar-27.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4ce4a601cc1d129dd4f44e66e45ca11f/transformed/jetified-multiline-collapsingtoolbar-27.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ce4a601cc1d129dd4f44e66e45ca11f/transformed/jetified-multiline-collapsingtoolbar-27.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ce4a601cc1d129dd4f44e66e45ca11f/transformed/jetified-multiline-collapsingtoolbar-27.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.opacapp/multiline-collapsingtoolbar/27.1.0/7b058040fc3d551b3d3708bbea24a468153331eb/multiline-collapsingtoolbar-27.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

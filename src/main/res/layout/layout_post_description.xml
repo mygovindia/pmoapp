@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/infograph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#66000000"
+            android:minHeight="220dp"
+            android:scaleType="fitXY" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/appBarTopMargin"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/back2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="@dimen/padding_normal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light"
+        android:orientation="vertical">
+
+        <com.sanskrit.pmo.Utils.FontTextView
+            android:id="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingRight="16dp"
+            android:paddingBottom="@dimen/padding_normal"
+            android:textColor="@color/black_grey"
+            android:textSize="22sp" />
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_three_actions" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_normal">
+
+            <com.sanskrit.pmo.Utils.TypefaceTextView
+                android:id="@+id/author_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

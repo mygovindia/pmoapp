@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="@string/font_size"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:max="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:progress="10" />
+
+    <Button
+        android:id="@+id/cancel_tts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/voice_out_button_background"
+        android:padding="5dp"
+        android:text="@string/cancel"
+        android:textColor="@color/black_grey" />
+</LinearLayout>

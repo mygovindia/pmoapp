@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.anupcowkur:reservoir:3.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/924bd27c15dadef0bcacbe048ca97b59/transformed/jetified-reservoir-3.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/924bd27c15dadef0bcacbe048ca97b59/transformed/jetified-reservoir-3.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.anupcowkur/reservoir/3.1.0/5d31d0c2f7b14fe444b9c497006def068ddc8b51/reservoir-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.anupcowkur/reservoir/3.1.0/dea08e3881e3d6c4e76b65ffe20c3e8a9ed6c357/reservoir-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

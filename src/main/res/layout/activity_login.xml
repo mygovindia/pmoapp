@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <com.sanskrit.pmo.Utils.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Login with MyGov"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.sanskrit.pmo.Utils.TypefaceTextView
+                android:id="@+id/login_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="30dp"
+                android:text="Connecting with MyGov..."
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:indeterminate="true" />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/controlsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:background="#e0e0e0"
+        android:foregroundGravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingLeft="20dp"
+            android:text="Cancel  "
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_marginRight="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingRight="20dp"
+            android:text="Next  "
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="@color/colorPrimaryDark" />
+    </FrameLayout>
+</FrameLayout>

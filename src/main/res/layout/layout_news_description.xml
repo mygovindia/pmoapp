@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.sanskrit.pmo.uiwidgets.FourThreeView
+            android:id="@+id/shot_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="3" />
+
+        <FrameLayout
+            android:id="@+id/back_frame1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/appBarTopMargin"
+            android:background="#0006000d">
+
+            <ImageButton
+                android:id="@+id/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:layout_marginRight="@dimen/padding_normal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="#0006000d"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sanskrit.pmo.Utils.FontTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:paddingRight="16dp"
+            android:paddingBottom="@dimen/padding_normal"
+            android:textSize="22sp"
+            android:typeface="sans" />
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingBottom="15dp"
+            android:textSize="17sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignBounds"
+            android:background="#0006000d"
+            android:columnCount="3"
+            android:rowCount="7"
+            android:useDefaultMargins="false">
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_width="match_parent"
+                android:layout_columnSpan="3"
+                android:paddingTop="12dp">
+
+                <com.sanskrit.pmo.Utils.ThemeTintedButton
+                    android:id="@+id/action_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/transparent"
+
+                    android:drawableTop="@drawable/ic_remove_red_eye_black_24dp"
+                    android:text="@string/read_more" />
+
+                <com.sanskrit.pmo.Utils.ThemeTintedButton
+                    android:id="@+id/action_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_comment_black_18dp"
+                    android:text="@string/_0_comments" />
+
+                <com.sanskrit.pmo.Utils.ThemeTintedButton
+                    android:id="@+id/action_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_share_black_24dp"
+                    android:text="@string/share" />
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_normal">
+
+            <com.sanskrit.pmo.Utils.TypefaceTextView
+                android:id="@+id/author_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewmediaimages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewnewstweets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tweets_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>

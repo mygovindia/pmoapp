@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.digits.sdk.android:digits:1.11.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/19a397fb68eea4cf57aca3d098468f42/transformed/jetified-digits-1.11.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19a397fb68eea4cf57aca3d098468f42/transformed/jetified-digits-1.11.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19a397fb68eea4cf57aca3d098468f42/transformed/jetified-digits-1.11.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.digits.sdk.android/digits/1.11.1/5e7803cffce7ffdecf486a95c9c0665bb25604c1/digits-1.11.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.digits.sdk.android/digits/1.11.1/e180843aca1c3d3549eff8bbd65f25001e303028/digits-1.11.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

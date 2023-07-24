@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "324538961393",
+    "firebase_url": "https://pmindia-60881.firebaseio.com",
+    "project_id": "pmindia-60881",
+    "storage_bucket": "pmindia-60881.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324538961393:android:02cd011ca04175d8",
+        "android_client_info": {
+          "package_name": "com.sanskrit.pmo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324538961393-2a8rjqebka00r8ts9nfnfvbmbljetnaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanskrit.pmo",
+            "certificate_hash": "1e86c7fe62fe558c98e51316c67830e8179c304e"
+          }
+        },
+        {
+          "client_id": "324538961393-so1am2pq1gbfpjdbq31tu6kqg0v7bvf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXBVg1BJkxz6z2DYAhh0UvjcPZQSAjAvg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324538961393-so1am2pq1gbfpjdbq31tu6kqg0v7bvf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,323 @@
+<resources>
+
+    <attr name="cardStyle" format="reference" />
+    <attr name="accentColor" format="reference" />
+    <attr name="iconColor" format="reference" />
+    <attr name="windowBackground" format="reference" />
+    <attr name="progressBackgroundColor" format="reference" />
+    <attr name="progressDrawable" format="reference" />
+    <attr name="progressDrawableWithBackground" format="reference" />
+    <attr name="stateSelector" format="reference" />
+    <attr name="postTitleBackground" format="reference"/>
+
+    <style name="ThemeBaseLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="cardStyle">@style/CardViewStyle.Light</item>
+        <item name="accentColor">@color/colorAccent</item>
+        <item name="iconColor">@android:color/black</item>
+        <item name="windowBackground">@color/window_background</item>
+        <item name="stateSelector">@color/state_selector_light</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorLight</item>
+        <item name="progressDrawable">@drawable/progress_drawable</item>
+        <item name="progressDrawableWithBackground">@drawable/progress_drawable_withbackground</item>
+        <item name="postTitleBackground">@color/light_grey</item>
+
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ThemeBaseDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDarkTheme</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDarkTheme</item>
+        <item name="colorAccent">@color/colorAccentDarkTheme</item>
+        <item name="android:windowBackground">@color/window_background_dark</item>
+        <item name="cardStyle">@style/CardViewStyle.Dark</item>
+        <item name="accentColor">@color/colorAccentDarkTheme</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_dark</item>
+        <item name="stateSelector">@color/state_selector_dark</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorDark</item>
+        <item name="progressDrawable">@drawable/progress_drawable_dark</item>
+        <item name="progressDrawableWithBackground">@drawable/progress_drawable_withbackground_dark</item>
+        <item name="postTitleBackground">@color/dark_grey</item>
+
+
+    </style>
+
+    <style name="ThemeBaseBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="android:windowBackground">@color/window_background_black</item>
+        <item name="cardStyle">@style/CardViewStyle.Black</item>
+        <item name="accentColor">@color/colorAccentBlack</item>
+        <item name="iconColor">@android:color/white</item>
+        <item name="windowBackground">@color/window_background_black</item>
+        <item name="stateSelector">@color/state_selector_black</item>
+        <item name="progressBackgroundColor">@color/progressBackgroundColorDark</item>
+        <item name="progressDrawable">@drawable/progress_drawable_black</item>
+        <item name="progressDrawableWithBackground">
+            @drawable/progress_drawable_withbackground_black
+        </item>
+        <item name="postTitleBackground">@color/black_grey</item>
+
+
+    </style>
+
+    <style name="AppThemeLight" parent="ThemeBaseLight"></style>
+
+    <style name="AppThemeNormalLight" parent="ThemeBaseLight"></style>
+
+    <style name="AppTheme.FullScreen.Light" parent="ThemeBaseLight"></style>
+
+    <style name="AppThemeDark" parent="ThemeBaseDark">
+
+
+    </style>
+
+    <style name="AppThemeNormalDark" parent="ThemeBaseDark">
+
+    </style>
+
+    <style name="AppTheme.FullScreen.Dark" parent="ThemeBaseDark">
+
+    </style>
+
+    <style name="AppThemeBlack" parent="ThemeBaseBlack">
+
+
+    </style>
+
+    <style name="AppThemeNormalBlack" parent="ThemeBaseBlack">
+
+    </style>
+
+    <style name="AppTheme.FullScreen.Black" parent="ThemeBaseBlack">
+
+    </style>
+
+    <style name="ThemeReader" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryReader</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkReader</item>
+        <item name="colorAccent">@color/colorAccentReader</item>
+
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="TextApperance.Album.Title" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">29sp</item>
+    </style>
+
+    <style name="TextApperance.Artist.Title" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00666666</item>
+    </style>
+
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="CardViewStyle.Light" parent="CardView">
+        <item name="cardBackgroundColor">@color/pure_white</item>
+    </style>
+
+    <style name="CardViewStyle.Dark" parent="CardView">
+        <item name="cardBackgroundColor">@color/window_background_dark</item>
+    </style>
+
+    <style name="CardViewStyle.Black" parent="CardView">
+        <item name="cardBackgroundColor">@color/window_background_black</item>
+    </style>
+
+    <style name="EditTextBlackLineColor" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlHighlight">#000000</item>
+    </style>
+
+    <style name="EditTextTransparentLineColor" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="colorControlActivated">@android:color/transparent</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <style name="PocketProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">4dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">1</item>
+        <item name="spb_colors">@array/pocket_bar_colors</item>
+        <item name="spb_progressiveStart_activated">false</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slide_down</item>
+    </style>
+
+    <style name="Widget" />
+
+    <style name="Widget.TagView" parent="@android:style/Widget.TextView">
+        <item name="tagCornerRadius">6dp</item>
+        <item name="tagPadding">8dp</item>
+        <item name="tagUppercase">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ExpandedFabTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/dark_icon</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/dark_icon</item>
+    </style>
+
+    <style name="NewsComment">
+        <item name="android:textAppearance">@style/TextAppearance.Comment</item>
+        <item name="lineHeightHint">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Comment" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8a000000</item>
+        <!--<item name="android:letterSpacing">0.01</item>-->
+    </style>
+
+    <style name="TextAppearance.CommentAuthor" parent="@style/TextAppearance.AppCompat.Caption">
+        <!--<item name="android:fontFamily">sans-serif-medium</item>-->
+        <item name="android:textSize">14sp</item>
+        <!--<item name="android:fontFeatureSettings">smcp, onum</item>-->
+        <!--<item name="android:letterSpacing">0.02</item>-->
+    </style>
+
+    <style name="TextAppearance.CommentAuthor.News">
+        <item name="android:textColor">#8a000000</item>
+    </style>
+
+    <style name="TextAppearance.CommentTimestamp" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#430000</item>
+        <item name="android:textSize">14sp</item>
+        <!--<item name="android:fontFeatureSettings">onum, smcp</item>-->
+        <!--<item name="android:letterSpacing">0.02</item>-->
+    </style>
+
+    <style name="Widget.Pmo.InlineActionButton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAppearance">@style/TextAppearance.CommentAuthor</item>
+        <item name="android:drawablePadding">@dimen/spacing_micro</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="PostTitle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="lineHeightHint">32sp</item>
+    </style>
+
+    <style name="PostDescription">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="lineHeightHint">24sp</item>
+    </style>
+
+     <!--<style name="TextAppearance.PostTitle" parent="style/TextAppearance.AppCompat.Headline">
+          &lt;!&ndash;<item name="font">roboto-mono-regular</item>&ndash;&gt;
+          &lt;!&ndash;<item name="android:fontFamily">sans-serif-medium</item>&ndash;&gt;
+          &lt;!&ndash;<item name="android:textColor">@color/text_primary_dark</item>&ndash;&gt;
+      </style>
+
+      <style name="TextAppearance.PostDescription" parent="@style/TextAppearance.AppCompat.Subhead">
+          &lt;!&ndash;<item name="android:textColor">@color/text_tertiary_dark</item>&ndash;&gt;
+          &lt;!&ndash;<item name="android:letterSpacing">0.01</item>&ndash;&gt;
+      </style>-->
+
+    <style name="FeedbackNumberRatingBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/number_ratingbar</item>
+        <item name="android:indeterminateDrawable">@drawable/number_ratingbar</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+        <item name="android:max">5</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+    <style name="CustomTweetStyleDark" parent="tw__TweetDarkWithActionsStyle">
+        <item name="tw__primary_text_color">@android:color/white</item>
+        <item name="tw__action_color">@android:color/white</item>
+        <item name="tw__container_bg_color">@color/window_background_dark</item>
+    </style>
+
+    <style name="CustomTweetStyleLight" parent="tw__TweetLightWithActionsStyle">
+        <item name="tw__container_bg_color">@color/window_background</item>
+    </style>
+
+    <style name="ThemeContactPicker" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="cp_actionIconSearch">@drawable/ic_search_white_24dp</item>
+        <item name="cp_actionIconOK">@drawable/ic_done_white_24dp</item>
+        <item name="cp_actionIconCheckAll">@drawable/ic_select_all_white_24dp</item>
+
+        <item name="cp_textColorPrimary">@color/text_color_primary_light   </item>
+        <item name="cp_textColorSecondary">@color/text_color_secondary_light</item>
+        <item name="cp_actionIconCancel">@drawable/ic_close_black_36dp</item>
+
+
+        <item name="cp_badgeLineColor">@color/contact_badge_line_light</item>
+        <item name="cp_badgeTriangleColor">@color/contact_badge_triangle_light</item>
+        <item name="cp_badgeOverlayColor">@color/contact_badge_overlay_light</item>
+
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Collapsed" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+</resources>

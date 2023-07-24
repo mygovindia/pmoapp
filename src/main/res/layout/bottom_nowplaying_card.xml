@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playingBar"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_gravity="bottom"
+    android:visibility="gone">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/windowBackground"
+        android:clickable="true"
+        android:gravity="bottom">
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/above_shadow" />
+
+        <com.sanskrit.pmo.utils.SquareImageView
+            android:id="@+id/album_art_nowplayingcard"
+            android:layout_width="60dp"
+
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shadow"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/album_art_nowplayingcard"
+            android:orientation="vertical">
+
+
+            <com.sanskrit.pmo.Utils.TypefaceTextView
+                android:id="@+id/track_title"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="70dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="18sp" />
+
+            <com.sanskrit.pmo.Utils.TypefaceTextView
+                android:id="@+id/track_date"
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.sanskrit.pmo.uiwidgets.fabbutton.FabButton
+        android:id="@+id/playpause"
+        android:layout_width="@dimen/playing_bar_fab_size"
+        android:layout_height="@dimen/playing_bar_fab_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|top"
+        android:layout_marginEnd="@dimen/playing_bar_fab_margin"
+        android:layout_marginRight="@dimen/playing_bar_fab_margin"
+        android:color="@color/colorAccent"
+        android:elevation="20dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:visibility="visible"
+        app:fbb_autoStart="false"
+        app:fbb_hideProgressOnComplete="false"
+        app:fbb_progressColor="@color/colorPrimaryDark"
+        app:fbb_showEndBitmap="false" />
+
+    <!--<net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu-->
+    <!--android:id="@+id/fab_menu"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_gravity="right|top"-->
+    <!--android:layout_marginEnd="@dimen/playing_bar_suggestion_fab_margin"-->
+    <!--android:layout_marginRight="@dimen/playing_bar_suggestion_fab_margin"-->
+    <!--fab:fab_addButtonColorNormal="@color/white"-->
+    <!--fab:fab_addButtonColorPressed="@color/white_pressed"-->
+    <!--fab:fab_addButtonPlusIconColor="@color/half_black"-->
+    <!--fab:fab_labelStyle="@style/menu_labels_style"-->
+    <!--fab:fab_labelsPosition="left">-->
+
+    <!--<net.i2p.android.ext.floatingactionbutton.FloatingActionButton-->
+    <!--android:id="@+id/fab_wallaper"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--fab:fab_colorNormal="@color/white"-->
+    <!--fab:fab_colorPressed="@color/white_pressed"-->
+    <!--fab:fab_icon="@drawable/ic_wallpaper_black"-->
+    <!--fab:fab_title="@string/set_as_wallpaper" />-->
+
+    <!--<net.i2p.android.ext.floatingactionbutton.FloatingActionButton-->
+    <!--android:id="@+id/fab_save"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--fab:fab_colorNormal="@color/white"-->
+    <!--fab:fab_colorPressed="@color/white_pressed"-->
+    <!--fab:fab_icon="@drawable/content_save"-->
+    <!--fab:fab_title="@string/save_to_device" />-->
+
+    <!--</net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu>-->
+</FrameLayout>
+

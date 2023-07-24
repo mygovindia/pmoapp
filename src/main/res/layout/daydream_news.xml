@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+        <com.sanskrit.pmo.uiwidgets.TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:format12Hour="hh mm"
+            android:shadowColor="#800000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"
+            android:textColor="#eeeeee"
+            android:textSize="85sp" />
+
+        <com.sanskrit.pmo.Utils.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="#800000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8.0"
+            android:text="  :  "
+            android:textColor="#eeeeee"
+            android:textSize="85sp" />
+    </FrameLayout>
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        android:id="@+id/daydream_news1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="#eeeeee"
+        android:textSize="15sp" />
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        android:id="@+id/daydream_news2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="#eeeeee"
+        android:textSize="15sp" />
+
+    <com.sanskrit.pmo.Utils.TypefaceTextView
+        android:id="@+id/daydream_news3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="#eeeeee"
+        android:textSize="15sp" />
+</LinearLayout>
